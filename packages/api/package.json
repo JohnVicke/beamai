@@ -1,0 +1,26 @@
+{
+  "name": "@beam/api",
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "db:migrate": "sst shell drizzle-kit migrate",
+    "db:generate": "sst shell drizzle-kit generate",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20240512.0",
+    "drizzle-kit": "0.30.4"
+  },
+  "dependencies": {
+    "@hono/arktype-validator": "2.0.0",
+    "@scalar/hono-api-reference": "0.5.172",
+    "arktype": "2.0.4",
+    "better-auth": "1.1.16",
+    "cloudflare": "^3.1.0",
+    "drizzle-orm": "0.39.2",
+    "hono": "4.7.0",
+    "hono-openapi": "0.4.4",
+    "sst": "3.8.1"
+  }
+}
